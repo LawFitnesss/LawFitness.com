@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LawFitness</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111111;
+            background-image: url("https://images.alphacoders.com/692/thumb-1920-692039.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #222222;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            color: gold;
+            text-shadow: 2px 2px #333;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: gold;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            color: #333;
+        }
+
+        .plan {
+            border: 2px solid #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .plan h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .plan p {
+            margin-bottom: 10px;
+        }
+
+        .plan .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .customer {
+            margin-bottom: 20px;
+        }
+
+        .customer h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .customer .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .customer .images img {
+            flex: 1;
+            margin-right: 10px;
+            max-width: 100%;
+            margin-bottom: 10px;
+            border: 2px solid #333;
+        }
+
+        .contact-info {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LawFitness</h1>
+        <nav>
+            <ul>
+                <li><a href="#trainingsplaene">Trainingspläne</a></li>
+                <li><a href="#angebote">Angebote</a></li>
+                <li><a href="#transformationen">Transformationen</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <section id="trainingsplaene">
+            <h2>Trainingspläne</h2>
+            <div class="plan">
+                <h3>Trainingsplan für Anfänger</h3>
+                <p>Große Auswahl an Übungen<br>Personalisierbar</p>
+                <p class="price">15€</p>
+            </div>
+            <div class="plan">
+                <h3>Trainingsplan für Fortgeschrittene</h3>
+                <p>6x Woche (PPL, Arnold Split)<br>4x Woche (Ober- und Unterkörper)<br>2x Woche (Ganzkörper)</p>
+                <p class="price">17€</p>
+            </div>
+            <div class="plan">
+                <h3>Trainingsplan für Fußballer</h3>
+                <p>Krafttraining + Plyometrics<br>2x Woche Krafttraining in Kombination mit Explosivitäts- und
+                    Schnelligkeitsübungen</p>
+                <p class="price">19€</p>
+            </div>
+            <div class="plan">
+                <h3>Trainingsplan für Calisthenics</h3>
+                <p>Trainingsplan mit Calisthenics-Übungen<br>4x Woche (Ober- und Unterkörper)</p>
+                <p class="price">19€</p>
+            </div>
+        </section>
+
+        <section id="angebote">
+            <h2>Angebote</h2>
+            <div class="plan">
+                <h3>Trainingsplan + Ernährungsplan</h3>
+                <p>Individuell an deinen Zeitplan angepasster Trainingsplan<br>+ Ernährungsplan, um deinen Traumkörper zu
+                    erreichen</p>
+                <p class="price">23€</p>
+            </div>
+            <div class="plan">
+                <h3>Trainingsplan + Ernährungsplan + Übungsvideos</h3>
+                <p>Alles oben Genannte<br>+ Videos zur richtigen Ausführung der Übungen</p>
+                <p class="price">25€</p>
+            </div>
+        </section>
+
+        <section id="transformationen">
+            <h2>Transformationen</h2>
+            <div class="customer">
+                <h3>Kunde 1</h3>
+                <div class="images">
+                    <img src="images/LAW1.jpg" alt="Vorher">
+                    <img src="images/LAW2.jpg" alt="Nacher">
+                </div>
+            </div>
+            <div class="customer">
+                <div class="images">
+                    <img src="images/LAW3.jpg" alt="Vorher">
+                    <img src="images/LAW4.jpg" alt="Nacher">
+                </div>
+            </div>
+            <div class="customer">
+                <h3>Kunde 2</h3>
+                <div class="images">
+                    <img src="images/ADAM1.jpg" alt="Vorher">
+                    <img src="images/ADAM2.jpg" alt="Nacher">
+                </div>
+            </div>
+            <div class="customer">
+                <div class="images">
+                    <img src="images/ADAM3.jpg" alt="Vorher">
+                    <img src="images/ADAM4.jpg" alt="Nacher">
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <div class="contact-info">
+                <p>Bei Fragen oder Interesse melde dich gerne bei uns:</p>
+                <p>Email: info.lawfitness@gmail.com</p>
+                <p>Telefon: +43 677 64390419</p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Nachricht:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Senden</button>
+            </form>
+        </section>
+
+    </div>
+</body>
+
+</html>
